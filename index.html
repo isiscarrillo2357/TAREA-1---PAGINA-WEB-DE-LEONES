@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Todo Sobre Tu León</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Descubre Todo Sobre Tu León</h1>
+    </header>
+    <main>
+        <section class="upload">
+            <h2>Sube una foto de tu león</h2>
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📷</div>
+                <p>Arrastra y suelta una imagen aquí o haz clic para seleccionar</p>
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                <button id="uploadBtn">Seleccionar Foto</button>
+            </div>
+        </section>
+        <section class="profile">
+            <h2>Raza del León</h2>
+            <div class="lion-card">
+                <img id="lionImage" src="https://via.placeholder.com/300x200?text=Le%C3%B3n+Africano" alt="León Africano">
+                <h3>León Africano</h3>
+                <p><strong>Nombre científico:</strong> Panthera leo</p>
+                <p><strong>Origen:</strong> África</p>
+                <p><strong>Tamaño:</strong> Grande y majestuoso</p>
+            </div>
+        </section>
+        <section class="details">
+            <div class="care">
+                <h2>Cuidados Específicos</h2>
+                <ul>
+                    <li>Alimentación rica en carne fresca</li>
+                    <li>Ejercicio y espacio amplio</li>
+                    <li>Revisión veterinaria periódica</li>
+                    <li>Sombra y agua siempre disponible</li>
+                </ul>
+            </div>
+            <div class="history">
+                <h2>Datos Históricos</h2>
+                <ul>
+                    <li>Símbolo de la realeza</li>
+                    <li>Habita sabanas y praderas de África</li>
+                    <li>Vive en manadas lideradas por un macho dominante</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="analyzeBtn">Analizar Otra Foto</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

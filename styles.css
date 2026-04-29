@@ -1,0 +1,161 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f1e8; /* Color pergamino */
+    color: #3e2723; /* Marrón oscuro */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8d6e63; /* Marrón claro */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #fff;
+    border: 2px solid #a1887f; /* Marrón medio */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.upload {
+    text-align: center;
+}
+
+.upload-area {
+    border: 2px dashed #a1887f;
+    border-radius: 10px;
+    padding: 40px 20px;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-area:hover {
+    background-color: #f0f0f0;
+}
+
+.upload-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.upload-area p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+#uploadBtn {
+    background-color: #8d6e63;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#uploadBtn:hover {
+    background-color: #6d4c41;
+}
+
+.profile {
+    text-align: center;
+}
+
+.lion-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.lion-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.lion-card p {
+    margin-bottom: 5px;
+}
+
+.details h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #a1887f;
+    padding-bottom: 5px;
+}
+
+.details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.details li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+#analyzeBtn {
+    background-color: #8d6e63;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#analyzeBtn:hover {
+    background-color: #6d4c41;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .upload-area {
+        padding: 20px 10px;
+    }
+    
+    .lion-card img {
+        max-width: 250px;
+    }
+}
