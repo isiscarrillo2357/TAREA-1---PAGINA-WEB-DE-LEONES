@@ -27,7 +27,7 @@ To complete this exercise, you need:
 
 Microsoft Foundry uses projects to organize models, resources, data, and other assets used to develop an AI solution.
 
-1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com` and sign in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the Foundry logo at the top left to navigate to the home page.
+1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com` to start building; signing in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in.
 
 1. If it is not already enabled, in the tool bar the top of the page, enable the **New Foundry** option. Then, if prompted, create a new project with a unique name; expanding the **Advanced options** area to specify the following settings for your project:
     - **Foundry resource**: *Use the default name for your resource (usually {project_name}-resource)*
@@ -39,9 +39,9 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
 
 ## Deploy a model
 
-Now deploy a model that you'll use in your chat application.
+Next, let's deploy a model that you'll use in your chat application.
 
-1. On the **Home** page, select **Explore models** (or on the **Discover** page, select the **Models** tab) to view the Microsoft Foundry model catalog.
+1. Now you're ready to explore models. On the **Discover** page, select the **Models** tab to view the Microsoft Foundry model catalog.
 1. In the model catalog, search for `gpt-4.1`.
 1. Review the model card, and then deploy it using the default settings.
 1. When the model has been deployed, it will open in the model playground - you can test it there if you like.

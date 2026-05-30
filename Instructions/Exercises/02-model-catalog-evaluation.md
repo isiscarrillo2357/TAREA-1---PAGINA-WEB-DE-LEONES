@@ -25,7 +25,7 @@ To complete this exercise, you need:
 
 Microsoft Foundry uses projects to organize models, resources, data, and other assets used to develop an AI solution.
 
-1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com` and sign in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the Foundry logo at the top left to navigate to the home page.
+1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com` to start building; signing in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in.
 
 1. If it is not already enabled, in the tool bar the top of the page, enable the **New Foundry** option. Then, if prompted, create a new project with a unique name; expanding the **Advanced options** area to specify the following settings for your project:
     - **Foundry resource**: *Use the default name for your resource (usually {project_name}-resource)*
@@ -39,7 +39,7 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
 
 Microsoft Foundry Models provides a catalog of models that you can use in your project. You can browse the catalog and compare models to find the right one for your needs.
 
-1. On the **Home** page, select **Explore models** (or on the **Discover** page, select the **Models** tab) to view the Microsoft Foundry model catalog.
+1.  Now you're ready to explore models. On the **Discover** page, select the **Models** tab to view the Microsoft Foundry model catalog.
 
     The model catalog lists all models available in Foundry. Some are provided directly from Azure (and billed through your Azure subscription) while others are provided by partners and the community.
 
