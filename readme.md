@@ -1,13 +1,26 @@
-# Develop Generative AI Solutions in Azure
+# TAREA DE ENTREGA: AGENTE IA Y PÁGINA WEB DE LEONES
 
-The exercises in this repo are designed to provide you with a hands-on learning experience in which you'll explore common tasks that developers perform when building generative AI solutions on Microsoft Azure.
+Este repositorio contiene el trabajo de entrega para la tarea de integración del agente IA y la página web de leones.
 
-> **Note**: To complete the exercises, you'll need an Azure subscription in which you have sufficient permissions and quota to provision the necessary Azure resources and generative AI models. If you don't already have one, you can sign up for an [Azure account](https://azure.microsoft.com/free). There's a free trial option for new users that includes credits for the first 30 days.
+## Contenido del repositorio
 
-View the exercises in the [GitHub Pages site for this repo](https://go.microsoft.com/fwlink/?linkid=2310724).
+- `TAREA-1-LEONES/`: copia del repositorio de GitHub con la página web de leones y archivos del agente.
+- `labfiles/tools/python/tools-app/`: aplicación de ejemplo para conectar un agente con Microsoft Learn / Azure AI.
+- `readme.md`: este archivo de entrega.
 
-> **Note**: While you can complete these exercises on their own, they're designed to complement modules on [Microsoft Learn](https://aka.ms/mslearn-generative-ai); in which you'll find a deeper dive into some of the underlying concepts on which these exercises are based.
+## Instrucciones para entrega
 
-## Reporting issues
+1. Proyecto entregado en la rama `integracion-agente` del repositorio personal.
+2. Se ha subido la rama `integracion-agente` al remoto `https://github.com/isiscarrillo2357/TAREA-1---PAGINA-WEB-DE-LEONES.git`.
+3. Puedes usar el siguiente enlace para revisar el branch y crear la entrega:
 
-If you encounter any problems in the exercises, please report them as **issues** in this repo.
+   - https://github.com/isiscarrillo2357/TAREA-1---PAGINA-WEB-DE-LEONES/tree/integracion-agente
+
+## Estado de la entrega
+
+- El archivo `readme.md` fue actualizado para la entrega.
+- El commit y push se realizaron en la rama `integracion-agente`.
+
+## Nota
+
+Si deseas que haga un pull request de esta rama o que actualice el `README` con más detalles del proyecto, solo dime y lo hago enseguida.
