@@ -1,38 +1,75 @@
 import os
 from dotenv import load_dotenv
+import asyncio
 
-# import namespaces
+from openai import AsyncOpenAI
+from azure.identity.aio import (
+    DefaultAzureCredential,
+    get_bearer_token_provider
+)
 
 
+async def main():
 
-def main(): 
     # Clear the console
     os.system('cls' if os.name == 'nt' else 'clear')
 
     try:
-        # Get configuration settings 
+
+        # Get configuration settings
         load_dotenv()
+
         azure_openai_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
         model_deployment = os.getenv("MODEL_DEPLOYMENT")
 
-        # Initialize the OpenAI client
-        
+        # Initialize an async OpenAI client
+        token_provider = get_bearer_token_provider(
+            DefaultAzureCredential(),
+            "https://ai.azure.com/.default"
+        )
 
+        async_client = AsyncOpenAI(
+            base_url=azure_openai_endpoint,
+            api_key=token_provider
+        )
+
+        # Track responses
+        last_response_id = None
 
         # Loop until the user wants to quit
         while True:
-            input_text = input('\nEnter a prompt (or type "quit" to exit): ')
+
+            input_text = input(
+                '\nEnter a prompt (or type "quit" to exit): '
+            )
+
             if input_text.lower() == "quit":
                 break
+
             if len(input_text) == 0:
                 print("Please enter a prompt.")
                 continue
 
-            # Get a response
-            
+            # Send prompt to model
+            response = await async_client.responses.create(
+                model=model_deployment,
+                input=input_text,
+                previous_response_id=last_response_id
+            )
+
+            # Print response
+            assistant_text = response.output_text
+            print("Assistant:", assistant_text)
+
+            # Save response ID for conversation memory
+            last_response_id = response.id
 
     except Exception as ex:
         print(ex)
 
-if __name__ == '__main__': 
-    main()
+    finally:
+        print()
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
